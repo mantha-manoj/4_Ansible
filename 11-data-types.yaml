@@ -1,0 +1,23 @@
+- name: Data Types
+  hosts: local
+  connection: local
+  vars:
+    Name: "Manoj Mantha"
+    Age: 22
+    Is_live: true
+    Details:
+      Role: "DevOps Engineer"
+      Goal: "To become Junior DevOps Engineer"
+    Skills:
+    - Linux
+    - Shell
+    - ansible
+  tasks:
+  - name: Print the Data Types
+    ansible.builtin.debug:
+      msg: |
+        Name: {{ Name }}
+        Age: {{ Age }}
+        Is_live: {{ Is_live }}
+        Details: {{ Details }}
+        Skills: {{ Skills }}
