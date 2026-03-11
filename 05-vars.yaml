@@ -1,0 +1,13 @@
+- name: Tasks Level variables
+  hosts: local
+  connection: local
+  vars:
+    Name: "Manoj Mantha"
+    Role: "DevOps Enginner"
+    Goal: "Become Junior DevOps Engineer"
+  tasks:
+  - name: Print the variables
+    vars:
+      Name: "Manoj"
+    ansible.builtin.debug:
+      msg: "Name is {{ Name }}, Role is {{ Role }}, Goal is {{ Goal }}"
