@@ -10,3 +10,11 @@
   - name: print user_output
     ansible.builtin.debug:
       msg: "{{ user_output }}"
+    
+  - name: command module test
+    ansible.builtin.command: echo "Hello World"
+    register: text_output
+  
+  - name: print text_output
+    ansible.builtin.debug:
+      msg: "{{ text_output }}"
