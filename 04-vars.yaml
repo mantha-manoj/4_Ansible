@@ -8,4 +8,4 @@
   tasks:
   - name: Print the variables
     ansible.builtin.debug:
-      msg: "Name is {{ name }}, Role is {{ role }}, Goal is {{ goal }}"
+      msg: "Name is {{ Name }}, Role is {{ Role }}, Goal is {{ Goal }}"
