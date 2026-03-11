@@ -1,0 +1,11 @@
+- name: Play level variables
+  hosts: local
+  connection: local
+  vars:
+    name: "Manoj Mantha"
+    role: "DevOps Enginner"
+    goal: "Become Junior DevOps Engineer"
+  tasks:
+  - name: Print the variables
+    ansible.builtin.debug:
+      msg: "Name is {{ name }}, Role is {{ role }}, Goal is {{ goal }}"
