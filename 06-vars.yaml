@@ -5,5 +5,7 @@
   - variable.yaml
   tasks:
   - name: print the variables using variable.yaml file
+    vars:
+      Name: "Manoj"
     ansible.builtin.debug:
       msg: "Name is {{ Name }}, Role is {{ Role }}, Goal is {{ Goal }}"
